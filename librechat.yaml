@@ -4,13 +4,13 @@ endpoints:
   custom:
     - name: "Claude-Share"
       apiKey: "${ANTHROPIC_API_KEY}"
-      baseURL: "http://34.53.76.72:8080/v1"
+      baseURL: "http://34.53.76.72:8080/v1/messages"
       models:
         default: ["sonnet"]
       titleConvo: true
       titleModel: "sonnet"
       modelDisplayLabel: "Claude"
       directEndpoint: true
-      addParams:
-        max_tokens: 4096
-      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "stream"]
+      customParams:
+        defaultParamsEndpoint: "anthropic"
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
