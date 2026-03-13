@@ -1,4 +1,4 @@
-version: 1
+version: "1"
 endpoints:
   custom:
     - name: "Claude-Share"
