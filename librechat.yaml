@@ -7,8 +7,7 @@ endpoints:
       baseURL: "https://claude-api.onlychats.site/v1/messages"
       models:
         default: ["sonnet"]
-      titleConvo: true
-      titleModel: "sonnet"
+      titleConvo: false
       modelDisplayLabel: "Claude"
       directEndpoint: true
       customParams:
