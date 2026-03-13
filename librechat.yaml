@@ -1,4 +1,5 @@
 version: "1"
+cache: true
 endpoints:
   custom:
     - name: "Claude-Share"
@@ -7,6 +8,7 @@ endpoints:
       models:
         default:
           - sonnet
+      fetch: false  
       titleConvo: true
       titleModel: "sonnet"
       modelDisplayLabel: "Claude"
