@@ -6,11 +6,10 @@ endpoints:
       apiKey: "${ANTHROPIC_API_KEY}"
       baseURL: "http://34.53.76.72:8080/v1"
       models:
-        default:
-          - sonnet
-      fetch: false  
+        default: ["sonnet"]
       titleConvo: true
       titleModel: "sonnet"
       modelDisplayLabel: "Claude"
-      headers:
-        Authorization: "Bearer ${ANTHROPIC_API_KEY}" 
+      customParams:
+        defaultParamsEndpoint: "anthropic"
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
