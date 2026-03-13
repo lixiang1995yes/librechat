@@ -7,8 +7,8 @@ fileConfig:
       fileSizeLimit: 50
       supportedMimeTypes:
         - "application/pdf"
-        - "text/plain"
-        - "text/csv"
         - "image/jpeg"
         - "image/png"
+        - "image/gif"
         - "image/webp"
+        - "text/plain"
