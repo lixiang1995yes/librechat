@@ -1,17 +1,14 @@
-version: "1.2"
+version: "1.2.1"
 cache: true
-endpoints:
-  custom:
-    - name: "Claude-Share"
-      apiKey: "${CLAUDE_PROXY_KEY}"
-      baseURL: "https://claude-api.onlychats.site/v1/messages"
-      models:
-        default: ["sonnet"]
-      titleConvo: false
-      modelDisplayLabel: "Claude"
-      directEndpoint: true
-      customParams:
-        defaultParamsEndpoint: "anthropic"
-      addParams:
-        stream: false
-      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
+fileConfig:
+  endpoints:
+    anthropic:
+      fileLimit: 5
+      fileSizeLimit: 50
+      supportedMimeTypes:
+        - "application/pdf"
+        - "text/plain"
+        - "text/csv"
+        - "image/jpeg"
+        - "image/png"
+        - "image/webp"
