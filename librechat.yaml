@@ -1,0 +1,14 @@
+version: 1
+endpoints:
+  custom:
+    - name: "Claude-Share"
+      apiKey: "${ANTHROPIC_API_KEY}"
+      baseURL: "http://34.53.76.72:8080/v1"
+      models:
+        default:
+          - sonnet
+      titleConvo: true
+      titleModel: "sonnet"
+      modelDisplayLabel: "Claude"
+      headers:
+        Authorization: "Bearer ${ANTHROPIC_API_KEY}"   # 确保和 curl 一致
