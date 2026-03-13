@@ -4,7 +4,7 @@ endpoints:
   custom:
     - name: "Claude-Share"
       apiKey: "${ANTHROPIC_API_KEY}"
-      baseURL: "http://34.53.76.72:8080/v1/messages"
+      baseURL: "https://claude-api.onlychats.site/v1/messages"
       models:
         default: ["sonnet"]
       titleConvo: true
