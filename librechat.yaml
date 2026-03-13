@@ -3,7 +3,7 @@ cache: true
 endpoints:
   custom:
     - name: "Claude-Share"
-      apiKey: "${ANTHROPIC_API_KEY}"
+      apiKey: "${CLAUDE_PROXY_KEY}"
       baseURL: "https://claude-api.onlychats.site/v1/messages"
       models:
         default: ["sonnet"]
