@@ -12,4 +12,6 @@ endpoints:
       directEndpoint: true
       customParams:
         defaultParamsEndpoint: "anthropic"
+      addParams:
+        stream: false
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
