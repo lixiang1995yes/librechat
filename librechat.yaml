@@ -11,4 +11,4 @@ endpoints:
       titleModel: "sonnet"
       modelDisplayLabel: "Claude"
       headers:
-        Authorization: "Bearer ${ANTHROPIC_API_KEY}"   # 确保和 curl 一致
+        Authorization: "Bearer ${ANTHROPIC_API_KEY}" 
